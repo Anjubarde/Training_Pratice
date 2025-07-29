@@ -1,0 +1,20 @@
+package com.string.demo;
+
+public class StringImmutabilityTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="hello";
+		String s2="hello";
+		String s4=new String("hello");
+		String s3="welcome";
+		System.out.println(s1.hashCode());
+		System.out.println(s2.hashCode());
+		System.out.println(s3.hashCode());
+		System.out.println(s4.hashCode());
+		s2="nikita";
+		System.out.println(s1.hashCode());
+		System.out.println(s2.hashCode());
+	}
+
+}
